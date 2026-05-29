@@ -28,11 +28,11 @@ export function Contact() {
           </div>
           <div className="space-y-2">
             <p className="text-sm font-medium uppercase tracking-wider text-ink/50">
-              Hours
+              Availability
             </p>
             <p className="text-lg">{contact.hours}</p>
             <p className="text-sm font-medium uppercase tracking-wider text-ink/50 pt-4">
-              Studio
+              Address
             </p>
             <p className="text-lg">{contact.address}</p>
           </div>

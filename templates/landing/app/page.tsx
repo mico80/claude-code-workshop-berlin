@@ -1,8 +1,9 @@
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
-import { HowItWorks } from "../components/HowItWorks";
+import { Neighbourhood } from "../components/Neighbourhood";
 import { Benefits } from "../components/Benefits";
+import { HowItWorks } from "../components/HowItWorks";
 import { Testimonials } from "../components/Testimonials";
 import { FAQ } from "../components/FAQ";
 import { Contact } from "../components/Contact";
@@ -15,8 +16,9 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
-        <HowItWorks />
+        <Neighbourhood />
         <Benefits />
+        <HowItWorks />
         <Testimonials />
         <FAQ />
         <Contact />

@@ -27,6 +27,17 @@ export function Hero() {
             {hero.ctaSecondary.label}
           </a>
         </div>
+        <div className="mt-12">
+          <img
+            src="/playa-honda-hero.jpg"
+            alt="Playa Honda beach, Lanzarote"
+            className="w-full rounded-2xl object-cover shadow-lg"
+            style={{ maxHeight: "480px" }}
+          />
+          <p className="mt-2 text-xs text-ink/40 text-right">
+            Photo: Lanzarote · <a href="https://unsplash.com" className="underline hover:text-ink/60" target="_blank" rel="noopener noreferrer">Unsplash</a>
+          </p>
+        </div>
       </div>
     </section>
   );
