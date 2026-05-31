@@ -1,15 +1,18 @@
-import { neighbourhood } from "../content";
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
 
 export function Neighbourhood() {
+  const { t } = useLanguage();
   return (
     <section id="neighbourhood" className="px-6 py-24">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold">
-          {neighbourhood.heading}
+          {t.neighbourhood.heading}
         </h2>
-        <p className="mt-3 text-lg text-ink/65">{neighbourhood.intro}</p>
+        <p className="mt-3 text-lg text-ink/65">{t.neighbourhood.intro}</p>
         <div className="mt-12 grid md:grid-cols-2 gap-6">
-          {neighbourhood.items.map((place, i) => (
+          {t.neighbourhood.items.map((place, i) => (
             <article
               key={i}
               className="rounded-2xl border border-ink/10 hover:border-ink/30 transition overflow-hidden"
@@ -37,7 +40,7 @@ export function Neighbourhood() {
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
                     <circle cx="12" cy="9" r="2.5"/>
                   </svg>
-                  View on Google Maps
+                  {t.neighbourhood.mapLabel}
                 </a>
               </div>
             </article>

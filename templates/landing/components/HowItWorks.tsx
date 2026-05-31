@@ -1,14 +1,17 @@
-import { howItWorks } from "../content";
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
 
 export function HowItWorks() {
+  const { t } = useLanguage();
   return (
     <section id="how" className="px-6 py-24">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold mb-12">
-          {howItWorks.heading}
+          {t.howItWorks.heading}
         </h2>
         <ol className="grid md:grid-cols-3 gap-8">
-          {howItWorks.steps.map((step, i) => (
+          {t.howItWorks.steps.map((step, i) => (
             <li key={i} className="relative">
               <span className="text-4xl font-bold text-accent">
                 {String(i + 1).padStart(2, "0")}

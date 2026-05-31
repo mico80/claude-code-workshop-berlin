@@ -33,12 +33,12 @@ export const hero = {
 
 export const services = {
   heading: "The property",
-  intro: "Calle Foque 31 — everything you need for a relaxed, sun-filled stay.",
+  intro: "Calle Foque — everything you need for a relaxed, sun-filled stay.",
   items: [
     {
       title: "Outdoor living",
       summary:
-        "Private terrace with sun loungers, outdoor dining, and a BBQ. Lanzarote gets over 300 sunny days a year — the terrace is where you'll spend most of them.",
+        "Private terrace. Lanzarote gets over 300 sunny days a year — the terrace is where you'll spend most of them.",
     },
     {
       title: "Fully equipped kitchen",
@@ -46,10 +46,18 @@ export const services = {
         "Full-size fridge, oven, hob, and all the cookware you need. A washing machine is included too. There's a supermarket within easy walking distance for your weekly shop.",
     },
     {
-      title: "Comfortable and connected",
+      title: "Comfortable and fully furnished",
       summary:
-        "Air-conditioned bedrooms, fast Wi-Fi throughout, and a television in the living room. Off-street parking is included at no extra cost.",
+        "A television in the living room and off-street parking included at no extra cost.",
     },
+  ],
+  photos: [
+    { src: "/intern/living_room.jpeg", caption: "Living room" },
+    { src: "/intern/kitchen.jpeg", caption: "Kitchen" },
+    { src: "/intern/terrace2.jpeg", caption: "Terrace" },
+    { src: "/intern/big_bedroom.jpeg", caption: "Main bedroom" },
+    { src: "/intern/small_bedroom.jpeg", caption: "Second bedroom" },
+    { src: "/intern/toilette.jpeg", caption: "Bathroom" },
   ],
 };
 
@@ -222,7 +230,8 @@ export const contact = {
   email: "incrediball@gmail.com",
   phone: "+34 XXX XXX XXX",
   hours: "Available most days · reply within a few hours",
-  address: "Calle Foque 31, Playa Honda, 35509 Lanzarote, Spain",
+  address: "Calle Foque, Playa Honda",
+  mapUrl: "https://www.google.com/maps/search/Calle+Foque,+Playa+Honda,+Lanzarote",
 };
 
 export const meta = {
